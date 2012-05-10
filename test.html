@@ -1,10 +1,5 @@
 <html><head><title>test</title></head>
-<!-- how they want me to get a token; see the bottom section of: https://www.leaguevine.com/docs/api/oauth2/ -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
-<script src="sorttable.js">
-<script>
-players = $.ajax("https://api.leaguevine.com/v1/team_players/?team_ids=%5B18734%5D&access_token=762cca5b9c");
-</script>
+<script src="sorttable.js"></script>
 <style>
 /* Sortable tables */
 table.sortable thead th {
@@ -35,31 +30,7 @@ tr {
 <body>
 <table id="stats" class="sortable">
     <tr><th>Name</th><th>Assists</th><th>Goals</th><th>Turnovers</th><th>Blocks</th></tr>
-        <tr><td>Christian Gaffney</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-        <tr><td>Brent Anderson</td><td>14</td><td>8</td><td>7</td><td>2</td></tr>
-        <tr><td>Nick Judson</td><td>1</td><td>1</td><td>7</td><td>0</td></tr>
-        <tr><td>Dwight Harris</td><td>5</td><td>4</td><td>4</td><td>0</td></tr>
-        <tr><td>Chris Mazur</td><td>15</td><td>3</td><td>9</td><td>3</td></tr>
-        <tr><td>Misha Horowitz</td><td>5</td><td>1</td><td>8</td><td>0</td></tr>
-        <tr><td>Austin Raymond</td><td>0</td><td>2</td><td>0</td><td>1</td></tr>
-        <tr><td>Husayn Carnegie</td><td>0</td><td>3</td><td>1</td><td>5</td></tr>
-        <tr><td>Isaiah Bryant</td><td>5</td><td>2</td><td>2</td><td>4</td></tr>
-        <tr><td>Eric Rathbun</td><td>0</td><td>1</td><td>0</td><td>2</td></tr>
-        <tr><td>Joe Ouellette</td><td>1</td><td>2</td><td>1</td><td>4</td></tr>
-        <tr><td>Seth Canetti</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
-        <tr><td>Joe Anderson</td><td>0</td><td>6</td><td>5</td><td>4</td></tr>
-        <tr><td>Will Murphy</td><td>0</td><td>0</td><td>0</td><td>3</td></tr>
-        <tr><td>John Korber</td><td>4</td><td>21</td><td>3</td><td>1</td></tr>
-        <tr><td>Dan Casey</td><td>3</td><td>2</td><td>3</td><td>0</td></tr>
-        <tr><td>Andrew Bosco</td><td>4</td><td>4</td><td>5</td><td>0</td></tr>
-        <tr><td>Ben Weyers</td><td>0</td><td>1</td><td>1</td><td>1</td></tr>
-        <tr><td>Steven Glauser</td><td>1</td><td>1</td><td>7</td><td>2</td></tr>
-        <tr><td>Lucas Murphy</td><td>3</td><td>1</td><td>2</td><td>3</td></tr>
-        <tr><td>Kamil Skwarek</td><td>1</td><td>1</td><td>2</td><td>1</td></tr>
-        <tr><td>Rafe Steinhauer</td><td>9</td><td>3</td><td>6</td><td>3</td></tr>
-        <tr><td>Garrett Santi</td><td>0</td><td>3</td><td>0</td><td>2</td></tr>
-        <tr><td>Matt Tomasko</td><td>0</td><td>2</td><td>0</td><td>0</td></tr>
-        <tr><td>Matt Baum</td><td>3</td><td>1</td><td>7</td><td>1</td></tr>
+    <tr><td>Christian Gaffney</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Brent Anderson</td><td>14</td><td>8</td><td>7</td><td>2</td></tr><tr><td>Nick Judson</td><td>1</td><td>1</td><td>7</td><td>0</td></tr><tr><td>Dwight Harris</td><td>5</td><td>4</td><td>4</td><td>0</td></tr><tr><td>Chris Mazur</td><td>15</td><td>3</td><td>9</td><td>3</td></tr><tr><td>Misha Horowitz</td><td>5</td><td>1</td><td>8</td><td>0</td></tr><tr><td>Austin Raymond</td><td>0</td><td>2</td><td>0</td><td>1</td></tr><tr><td>Husayn Carnegie</td><td>0</td><td>3</td><td>1</td><td>5</td></tr><tr><td>Isaiah Bryant</td><td>5</td><td>2</td><td>2</td><td>4</td></tr><tr><td>Eric Rathbun</td><td>0</td><td>1</td><td>0</td><td>2</td></tr><tr><td>Joe Ouellette</td><td>1</td><td>2</td><td>1</td><td>4</td></tr><tr><td>Seth Canetti</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Joe Anderson</td><td>0</td><td>6</td><td>5</td><td>4</td></tr><tr><td>Will Murphy</td><td>0</td><td>0</td><td>0</td><td>3</td></tr><tr><td>John Korber</td><td>4</td><td>21</td><td>3</td><td>1</td></tr><tr><td>Dan Casey</td><td>3</td><td>2</td><td>3</td><td>0</td></tr><tr><td>Andrew Bosco</td><td>4</td><td>4</td><td>5</td><td>0</td></tr><tr><td>Ben Weyers</td><td>0</td><td>1</td><td>1</td><td>1</td></tr><tr><td>Steven Glauser</td><td>1</td><td>1</td><td>7</td><td>2</td></tr><tr><td>Lucas Murphy</td><td>3</td><td>1</td><td>2</td><td>3</td></tr><tr><td>Kamil Skwarek</td><td>1</td><td>1</td><td>2</td><td>1</td></tr><tr><td>Rafe Steinhauer</td><td>9</td><td>3</td><td>6</td><td>3</td></tr><tr><td>Garrett Santi</td><td>0</td><td>3</td><td>0</td><td>2</td></tr><tr><td>Matt Tomasko</td><td>0</td><td>2</td><td>0</td><td>0</td></tr><tr><td>Matt Baum</td><td>3</td><td>1</td><td>7</td><td>1</td></tr>
 </table>
 </body>
 </html>
