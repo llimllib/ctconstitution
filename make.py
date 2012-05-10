@@ -39,3 +39,8 @@ in_ = file("test.mustache.html").read()
 out.write(pystache.render(in_, {"players": players}))
 
 out.close()
+
+import os
+dropbox =  os.path.expanduser("~/Dropbox/Public/ctconstitution/")
+os.system("cp sorttable.js %s" % dropbox)
+os.system("cp test.html %s" % dropbox)
