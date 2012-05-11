@@ -1,5 +1,11 @@
 <html><head><title>test</title></head>
 <script src="sorttable.js"></script>
+<script>
+//window.onload = function() {
+//    //click on the table header
+//    document.getElementsByClassName("sortable")[0].children[0].children[0].children[1].click()
+//}
+</script>
 <style>
 /* Sortable tables */
 table.sortable thead th {
@@ -29,9 +35,9 @@ tr {
 </style>
 <body>
 <table id="stats" class="sortable">
-    <tr><th>Name</th><th>Assists</th><th>Goals</th><th>Turnovers</th><th>Blocks</th></tr>
+    <tr><th class="sorttable_sorted"># <span id="sorttable_sortfwdind">&nbsp;&#x25BE;</span></th><th>Name</th><th>Assists</th><th>Goals</th><th>Turnovers</th><th>Blocks</th></tr>
     {{#players}}
-        <tr><td>{{name}}</td><td>{{assists}}</td><td>{{goals}}</td><td>{{turnovers}}</td><td>{{blocks}}</td></tr>
+        <tr><td>{{number}}</td><td>{{name}}</td><td>{{assists}}</td><td>{{goals}}</td><td>{{turnovers}}</td><td>{{blocks}}</td></tr>
     {{/players}}
 </table>
 </body>
