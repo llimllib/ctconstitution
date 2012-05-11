@@ -23,8 +23,7 @@ def create_team_page():
         if not any([name, num, assists, goals, tos, ds, dnp]):
             break
 
-        num, assists, goals, tos, ds, dnp = map(intorzero,
-            [num, assists, goals, tos, ds, dnp])
+        assists, goals, tos, ds, dnp = map(intorzero, [assists, goals, tos, ds, dnp])
 
         players.append({
             "name": name,
@@ -80,8 +79,7 @@ def create_player_pages():
 
             dnp = True if row[-1] == "DNP" else False
 
-            num, assists, goals, tos, ds = map(intorzero,
-                [num, assists, goals, tos, ds])
+            assists, goals, tos, ds = map(intorzero, [assists, goals, tos, ds])
 
             players.setdefault(name, []).append({
                 "opponent": opponent,
